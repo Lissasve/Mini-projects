@@ -12,7 +12,7 @@ print(f'Привет, {name}')
 
 def magic_ball():
     while True:
-        answer = input('О чем ты хочешь узнать?')
+        question = input('О чем ты хочешь узнать?')
         random_answer = random.choice(answers)
         print(random_answer)
         break

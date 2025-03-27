@@ -14,15 +14,15 @@ def generate_password(lenght, chars):
 def questions():
     chars = []
 
-    if content_of_numbers == 'да':
+    if content_of_numbers.lower() == 'да':
         chars.extend(dgts)  # добавляем в список
-    if content_of_uppercase == 'да':  # добавляем в список
+    if content_of_uppercase.lower() == 'да':  # добавляем в список
         chars.extend(uppercase_letters)  # добавляем в список
-    if content_of_lowercase == 'да':  # добавляем в список
+    if content_of_lowercase.lower() == 'да':  # добавляем в список
         chars.extend(lowercase_letters)  # добавляем в список
-    if content_of_punctuation == 'да':  # добавляем в список
+    if content_of_punctuation.lower() == 'да':  # добавляем в список
         chars.extend(punctuation)
-    if not_content_ambig_chars == 'да':
+    if not_content_ambig_chars.lower() == 'да':
         chars = [char for char in chars if char not in ambig_chars]  # удаляем из списка неоднозначные символы
     return chars
 
